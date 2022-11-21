@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-full text-sm md:text-base bg-black text-white py-1 md:py-2 px-3 md:px-6 cursor-pointer;
+  }
+
+  .btn-line {
+    @apply rounded-full text-sm md:text-base text-orange hover:text-white hover:bg-orange border border-orange py-1 md:py-2 px-3 md:px-6 cursor-pointer;
+  }
+
+  .section-title {
+    @apply uppercase text-5xl md:text-8xl;
+  }
+}
+
+@font-face {
+  font-family: "Sans";
+  font-weight: 400;
+  src        : url("./assets/fonts/General-Sans/GeneralSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Sans";
+  font-weight: 800;
+  src        : url("./assets/fonts/General-Sans/GeneralSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "Koulen";
+  src        : url("./assets/fonts/Koulen.ttf");
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Koulen', 'Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-sans {
+  font-family: 'Sans';
+}
+
+.bg-little {
+  background: url('./assets/bg-little.png') no-repeat right center;
+  background-size: cover;
+}
+.bg-more {
+  background: url('./assets/bg-more.png') no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 768px){
+  .container{
+    width: 90%;
+  }
+}
