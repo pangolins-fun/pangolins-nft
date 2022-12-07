@@ -16,13 +16,13 @@ export default function Banner() {
             <div className="text-cyan">THE PANGOLINS</div>
           </div>
           <div className="w-full md:w-80">
-            {account ? (
+            {/* {account ? (
               <a onClick={mint} className="btn-line mb-4 inline-block">
                 MINT YOUR PANGOLINS
               </a>
             ) : (
               <ConnectBtn />
-            )}
+            )} */}
 
             <div className="text-sans">
               Collection of 3888 unique Pangolin NFTs on the Aptos Blockchain to

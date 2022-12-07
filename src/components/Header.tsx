@@ -15,13 +15,13 @@ export default function Header() {
             <a>MORE</a>
             <a className="text-orange">MINT</a>
           </nav>
-          {account ? (
+          {/* {account ? (
             <a className="flex cursor-pointer items-center gap-1 btn ">
               {account.slice(0, 4)}...{account.slice(-4)}
             </a>
           ) : (
            <ConnectBtn />
-          )}
+          )} */}
         </div>
       </header>
     </div>
